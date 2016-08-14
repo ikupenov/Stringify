@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text2String</title>
+</head>
+<body>
+     <style>
+        .text-area {
+            resize: none;
+            overflow-y: scroll;
+        }
+    </style>
+    <script src="bower_components/clipboard/dist/clipboard.min.js"></script>
+
+    <textarea id="get-text" class="text-area" rows="10" cols="50" placeholder="Paste Text Here"></textarea>
+    <textarea id="result" class="text-area" rows="10" cols="50"></textarea>
+    <button id="btn" data-clipboard-action="copy" data-clipboard-target="#result">Copy to Clipboard</button>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
